@@ -1,0 +1,21 @@
+#Успешный сценарий
+GET localhost:8080/authorize?login=admin&password=hardpass
+
+###
+
+#Неверный пароль
+GET localhost:8080/authorize?login=admin&password=hardpas
+
+###
+
+#Неверный логин
+GET localhost:8080/authorize?login=admi&password=hardpass
+
+###
+
+#Не переданы параметры
+GET localhost:8080/authorize
+
+###
+#Пустой список ролей
+GET localhost:8080/authorize?login=simpleUser&password=simpleUser
