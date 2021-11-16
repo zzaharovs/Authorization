@@ -1,5 +1,5 @@
 #Успешный сценарий
-GET localhost:8080/authorize?login=admin&password=hardpass
+GET localhost:8787/authorize?login=admin&password=hardpass
 
 ###
 
